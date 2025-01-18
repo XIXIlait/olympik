@@ -11,7 +11,7 @@ import ButtonLink from 'components/atoms/Button/ButtonLink'
 const ProjectDetail = () => {
   const [isCarouselOpen, setIsCarouselOpen] = useState(false);
   const [carouselIndex, setCarouselIndex] = useState(0);
-  const images = ['/images/1s.jpeg', '/images/2s.jpeg', '/images/3s.jpg'];
+  const images = ['/images/1s.jpeg', '/images/2s.jpeg', '/images/3s.jpeg'];
 
   const openCarousel = (index: number) => {
     setCarouselIndex(index);
@@ -69,7 +69,7 @@ const ProjectDetail = () => {
       {isCarouselOpen && (
         <ImageCarousel images={images} initialIndex={carouselIndex} onClose={() => setIsCarouselOpen(false)} />
       )}
-      <div className="mt-8 text-center mb-16 flex justify-center space-x-4">
+      <div className="mt-8 text-center mb-16 flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 justify-center">
         <ButtonLink value="Nos autres projets" href="/project" />
         <a
           href="https://app.olympik.net"
