@@ -44,10 +44,10 @@ module.exports = {
       pink: colors.pink,
       rose: colors.rose,
       cardDark: '#161629',
-      primary: '#6016FC',
-      dark: '#0B0B22',
+      primary: '#E53653', //bouton E85E5A 509991
+      dark: '#1A1A1B', //fond principal
       error: '#FC165B',
-      badge: '#16FCD2',
+      badge: '#FFD700', //texte titre FFD700 8CFF98
       muted: '#ffffff99',
       highlight: '#221048',
       light: '#ffffff0d',
