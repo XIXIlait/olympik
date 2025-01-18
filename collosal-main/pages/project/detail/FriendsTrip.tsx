@@ -11,7 +11,7 @@ import ButtonLink from 'components/atoms/Button/ButtonLink'
 const ProjectDetail = () => {
   const [isCarouselOpen, setIsCarouselOpen] = useState(false);
   const [carouselIndex, setCarouselIndex] = useState(0);
-  const images = ['/images/1s.jpeg', '/images/2s.jpeg', '/images/3s.jpg'];
+  const images = ['/images/1b.jpeg', '/images/2b.jpeg', '/images/3b.jpeg'];
 
   const openCarousel = (index: number) => {
     setCarouselIndex(index);
@@ -19,12 +19,12 @@ const ProjectDetail = () => {
   };
 
   return (
-    <PageTemplate title='SMA'>
+    <PageTemplate title='Friends Trip'>
       <section className="grid place-items-center" data-aos="zoom-in-up">
         <div className="text-center sm:w-10/12 md:w-8/12 lg:w-6/12">
           <PageSentence
             badge="PROJET"
-            title="SMA"
+            title="Friends Trip"
           />
         </div>
       </section>
@@ -32,18 +32,18 @@ const ProjectDetail = () => {
       <section className="grid grid-cols-1 gap-8 md:grid-cols-2">
         <aside data-aos="fade-up-right">
           <div className="relative w-full h-[400px]">
-            <Image src="/images/sma.jpg" layout="fill" objectFit="contain" alt="SMA" />
+            <Image src="/images/friends.webp" layout="fill" objectFit="contain" alt="Friends Trip" />
           </div>
         </aside>
         <aside className="grid gap-12 place-content-center" data-aos="fade-up-left">
           <Text
             textStyle="SectionParagraph"
-            value="L'outil moderne pour écoles et étudiants. Permet de consulter son emploi du temps, de faire des tâches, et d'avoir les infos nécessaires pour les étudiants."
+            value="Une application pour trouver où les gens vont en voyage. Un réseau social pour les voyageurs."
           />
           <div className="grid gap-6">
             <div className="grid gap-2">
               <Text value="CATÉGORIE" textStyle="ProjectDetailLabel" />
-              <Text value="Applications scolaires" textStyle="ProjectDetailValue" />
+              <Text value="Réseau social" textStyle="ProjectDetailValue" />
             </div>
             <div className="grid gap-2">
               <Text value="CLIENT" textStyle="ProjectDetailLabel" />
@@ -62,29 +62,18 @@ const ProjectDetail = () => {
       <section className="grid grid-cols-1 gap-8 md:grid-cols-3 mt-8">
         {images.map((src, index) => (
           <div key={index} className="relative w-full h-[400px]" onClick={() => openCarousel(index)}>
-            <Image src={src} layout="fill" objectFit="contain" alt={`SMA Image ${index + 1}`} />
+            <Image src={src} layout="fill" objectFit="contain" alt={`Friends Trip Image ${index + 1}`} />
           </div>
         ))}
       </section>
       {isCarouselOpen && (
         <ImageCarousel images={images} initialIndex={carouselIndex} onClose={() => setIsCarouselOpen(false)} />
       )}
-      <div className="mt-8 text-center mb-8 flex justify-center space-x-4">
+      <div className="mt-8 text-center mb-16">
         <ButtonLink value="Nos autres projets" href="/project" />
-        <ButtonLink value="Devenez partenaire SMA" href="https://www.instagram.com" target="_blank" color="white" style="light" />
-        <a
-          href="https://www.instagram.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-buttonLight text-white hover:brightness-90 rounded px-14 py-4 text-base font-semibold"
-        >
-          Devenez partenaire SMA
-        </a>
       </div>
     </PageTemplate>
   )
 }
 
 export default ProjectDetail
-
-

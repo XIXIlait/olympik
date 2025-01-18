@@ -20,28 +20,28 @@ const Project = () => {
     {
       title: 'Drop the Block - Craft Edition',
       description: 'Un jeu d\'arcade addictif',
-      detailPage: '/project/detail',
+      detailPage: '/project/detail/DropTheBlock',
       imageUrl: '/images/drop.PNG',
       category: 'App sur mesure'
     },
     {
       title: 'Jymu',
       description: 'Le nouveau réseau social du sport',
-      detailPage: '/project/detail/index1',
+      detailPage: '/project/detail/Jymu',
       imageUrl: '/images/JPEG.jpg',
       category: 'App sur mesure'
     },
     {
       title: 'SMA (Student mobile App)',
       description: 'L\'outil moderne pour écoles et étudiants',
-      detailPage: '/project/detail/index2',
+      detailPage: '/project/detail/SMA',
       imageUrl: '/images/sma.jpg',
       category: 'App adaptable'
     },
     {
       title: 'Friends Trip',
       description: 'Une application pour trouver où les gens vont en voyage',
-      detailPage: '/project/detail/index3',
+      detailPage: '/project/detail/FriendsTrip',
       imageUrl: '/images/friends.webp',
       category: 'App sur mesure'
     },

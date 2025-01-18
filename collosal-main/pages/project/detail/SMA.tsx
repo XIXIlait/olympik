@@ -43,7 +43,7 @@ const ProjectDetail = () => {
           <div className="grid gap-6">
             <div className="grid gap-2">
               <Text value="CATÉGORIE" textStyle="ProjectDetailLabel" />
-              <Text value="Applications scolaires" textStyle="ProjectDetailValue" />
+              <Text value="Application scolaire" textStyle="ProjectDetailValue" />
             </div>
             <div className="grid gap-2">
               <Text value="CLIENT" textStyle="ProjectDetailLabel" />
@@ -69,14 +69,13 @@ const ProjectDetail = () => {
       {isCarouselOpen && (
         <ImageCarousel images={images} initialIndex={carouselIndex} onClose={() => setIsCarouselOpen(false)} />
       )}
-      <div className="mt-8 text-center mb-8 flex justify-center space-x-4">
+      <div className="mt-8 text-center mb-16 flex justify-center space-x-4">
         <ButtonLink value="Nos autres projets" href="/project" />
-        <ButtonLink value="Devenez partenaire SMA" href="https://www.instagram.com" target="_blank" color="white" style="light" />
         <a
-          href="https://www.instagram.com"
+          href="https://app.olympik.net"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-buttonLight text-white hover:brightness-90 rounded px-14 py-4 text-base font-semibold"
+          className="bg-buttonLight text-white hover:brightness-90 rounded px-14 py-4 text-base font-semibold  text-[#FFD700] hover:brightness-90 rounded px-14 py-4 text-base font-semibold border border-[#FFD700]"
         >
           Devenez partenaire SMA
         </a>
@@ -86,5 +85,3 @@ const ProjectDetail = () => {
 }
 
 export default ProjectDetail
-
-
