@@ -4,7 +4,7 @@ import LineDivider from 'components/atoms/LineDivider'
 import PageSentence from 'components/molecules/PageSentence'
 import ProjectCard from 'components/molecules/Card/ProjectCard'
 import PageTemplate from 'components/templates/PageTemplate'
-import React from 'react'
+import React, { useState } from 'react'
 import randomString from 'utils/randomString'
 
 const Project = () => {
@@ -13,33 +13,52 @@ const Project = () => {
     description: string
     detailPage: string
     imageUrl: string
+    category: string
   }
+
   const projectList: Project[] = [
     {
       title: 'Drop the Block - Craft Edition',
       description: 'Un jeu d\'arcade addictif',
       detailPage: '/project/detail',
-      imageUrl: '/images/drop.PNG'
+      imageUrl: '/images/drop.PNG',
+      category: 'App sur mesure'
     },
     {
       title: 'Jymu',
       description: 'Le nouveau réseau social du sport',
       detailPage: '/project/detail/index1',
-      imageUrl: '/images/JPEG.jpg'
+      imageUrl: '/images/JPEG.jpg',
+      category: 'App sur mesure'
     },
     {
       title: 'SMA (Student mobile App)',
       description: 'L\'outil moderne pour écoles et étudiants',
       detailPage: '/project/detail/index2',
-      imageUrl: '/images/sma.jpg'
+      imageUrl: '/images/sma.jpg',
+      category: 'App adaptable'
     },
     {
       title: 'Friends Trip',
       description: 'Une application pour trouver où les gens vont en voyage',
       detailPage: '/project/detail/index3',
-      imageUrl: '/images/friends.webp'
+      imageUrl: '/images/friends.webp',
+      category: 'App sur mesure'
     },
   ]
+
+  const [filteredProjects, setFilteredProjects] = useState<Project[]>(projectList);
+  const [selectedCategory, setSelectedCategory] = useState<string>('all');
+
+  const handleFilterChange = (value: string) => {
+    setSelectedCategory(value);
+    if (value === 'all') {
+      setFilteredProjects(projectList);
+    } else {
+      setFilteredProjects(projectList.filter(project => project.category === value));
+    }
+  };
+
   return (
     <PageTemplate title="Project - Collosal">
       <section className="flex flex-col items-center gap-5 md:flex-row md:justify-between">
@@ -57,16 +76,19 @@ const Project = () => {
         <aside className="w-full min-w-[175px] md:w-fit" data-aos="fade-left">
           <Select
             options={[
-              { label: 'App', value: 'app' },
-              { label: 'UI Design', value: 'ui-design' },
+              { label: 'Toutes les apps', value: 'all' },
+              { label: 'App sur mesure', value: 'App sur mesure' },
+              { label: 'App adaptable', value: 'App adaptable' },
             ]}
+            value={selectedCategory}
+            onChange={(e) => handleFilterChange(e.target.value)}
           />
         </aside>
       </section>
       <LineDivider />
       <section className="grid place-items-center gap-16">
         <div className="w-full grid grid-cols-1 gap-y-16 sm:grid-cols-2 sm:gap-x-5">
-          {projectList.map((project) => {
+          {filteredProjects.map((project) => {
             return (
               <div className="basis-full lg:basis-1/2" key={randomString(64)} data-aos="zoom-in-up">
                 <ProjectCard
