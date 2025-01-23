@@ -18,6 +18,7 @@ import SmallCardIcon from 'components/molecules/Card/SmallCardIcon'
 import CardListIcon from 'components/molecules/Card/CardListIcon'
 import TextArrowLink from 'components/molecules/TextArrowLink'
 import IconListItem from 'components/molecules/IconListItem'
+import PricingCard from 'components/molecules/Card/PricingCard'
 
 const Services = () => {
   return (
@@ -47,8 +48,8 @@ const Services = () => {
             <div className="sm:w-10/12 md:w-8/12 lg:w-full text-center lg:text-left">
               <SectionSentence
                 badge="CONCEPTION UI"
-                title="Ne laissez pas votre idée trainer, concevez votre prototype avec nous "
-                paragraph="Déléguez vos idées le plus rapidement possible, créez des designs modernes et des prototypes interactifs. Nos services sont abordables et accessibles à tous."
+                title="Donnez vie à vos idées avec un design moderne"
+                paragraph="Nous vous aidons à transformer vos idées en designs modernes et interactifs. Nos services sont accessibles et nous travaillons rapidement pour concrétiser vos projets."
               />
             </div>
             <div className="grid gap-6 w-full place-items-end md:w-8/12 lg:w-full">
@@ -73,8 +74,8 @@ const Services = () => {
             <div className="sm:w-10/12 md:w-8/12 lg:w-full text-center lg:text-left">
               <SectionSentence
                 badge="DÉVELOPPEMENT"
-                title="Créez des applications innovantes pour vos problèmes"
-                paragraph="Dites-nous simplement votre problème ou cos idées, et nous ferons une application qui répondra à vos besoins. Nous développons des applications iOS et Android, avec des tests directs sur téléphone et une estimation gratuite."
+                title="Des applications sur mesure pour vos besoins"
+                paragraph="Partagez vos idées ou problèmes avec nous, et nous créerons une application qui répondra parfaitement à vos attentes. Nous développons des applications iOS et Android, avec des tests en conditions réelles et une estimation gratuite."
               />
             </div>
             <div className="grid gap-6 w-full place-items-end md:w-8/12 lg:w-full">
@@ -118,8 +119,8 @@ const Services = () => {
             <div className="sm:w-10/12 md:w-8/12 lg:w-full text-center lg:text-left">
               <SectionSentence
                 badge="MAINTENANCE"
-                title="Prenez soin de votre serveur comme de votre propre enfant"
-                paragraph="Nous sauvegarderons vos serveurs chaque jour, les nettoierons chaque semaine, et les mettrons à jour. Nos services de maintenance sont sécurisés et optimisés."
+                title="Prenez soin de vos serveurs avec notre aide"
+                paragraph="Nous nous occupons de la sauvegarde quotidienne, du nettoyage hebdomadaire et des mises à jour de vos serveurs. Nos services de maintenance sont sécurisés et optimisés pour garantir la meilleure performance."
               />
             </div>
             <div className="grid gap-6 w-full place-items-end md:w-8/12 lg:w-full">
@@ -132,6 +133,56 @@ const Services = () => {
               <TextArrowLink label="Détail du service" href="/service/detail/index2" />
             </div>
           </aside>
+        </section>
+        <LineDivider />
+        {/* Prix */}
+        <section className="flex flex-col gap-16 items-center">
+          <div
+            className="text-center sm:w-10/12 md:w-8/12 lg:w-6/12"
+            data-aos="zoom-in-up"
+          >
+            <SectionSentence
+              title="Nos Tarifs"
+              badge="COMMENCER"
+            />
+          </div>
+          <div className="w-full grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
+            <div data-aos="fade-up-right">
+              <PricingCard
+                price="FREE€"
+                title="UI Design/Concept"
+                features={[
+                  '5 Pages de design',
+                  'Révisions illimitées',
+                  'Comprendre votre besoin et vous accompagner',
+                ]}
+              />
+            </div>
+            <div data-aos="fade-up">
+              <PricingCard
+                price="500€"
+                title="Développement App"
+                features={[
+                  'Application mobile IOS/Android',
+                  'Support complet',
+                  '5 revisions',
+                  'Prix sur Devis',
+                ]}
+              />
+            </div>
+            <div data-aos="fade-up">
+              <PricingCard
+                price="30€/mois"
+                title="Maintenance"
+                features={[
+                  'Sauvegarde quotidienne',
+                  'Nettoyage hebdomadaire',
+                  'Correction de bugs',
+                  'Prix sur Devis',
+                ]}
+              />
+            </div>
+          </div>
         </section>
       </PageTemplate>
     </>

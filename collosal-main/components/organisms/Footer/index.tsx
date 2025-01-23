@@ -26,24 +26,20 @@ const Footer = () => {
               <Text value="SERVICES" textStyle="FooterLinkGroupTitle" />
               <div className="space-y-[10px]">
                 <NavLink
-                  value="Conception UI"
-                  href="/service/detail"
+                  value="Apps sur mesure"
+                  href="/project"
                 />
                 <NavLink
-                  value="Développement d'applications"
-                  href="/service/detail"
+                  value="Apps adaptables"
+                  href="/how-we-work"
                 />
-                <NavLink value="Maintenance" href="/service/detail" />
-                <NavLink value="Prix et Tarifs" href="/pricing" />
               </div>
             </div>
             <div className="space-y-5">
               <Text value="ENTREPRISE" textStyle="FooterLinkGroupTitle" />
               <div className="space-y-[10px]">
-                <NavLink value="À Propos" href="/about" />
                 <NavLink value="Contact" href="/contact" />
-                <NavLink value="Envoyer un devis" href="/quote" />
-                <NavLink value="Conditions d'utilisation" href="/term-of-service" />
+                <NavLink value="Conditions & Mentions légales" href="/term-of-service" />
               </div>
             </div>
           </div>

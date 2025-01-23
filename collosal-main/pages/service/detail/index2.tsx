@@ -145,7 +145,7 @@ const ServiceDetail = () => {
           {`Vous n'avez pas trouvé de réponse ? `}
           <div className="sm:hidden"></div>
           <div className="text-primary inline">
-            <Link href={'/quote'}>N&apos;hésitez pas à demander !</Link>
+            <Link href={'/contact'}>N&apos;hésitez pas à demander !</Link>
           </div>
         </div>
       </section>

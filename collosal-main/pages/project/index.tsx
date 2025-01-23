@@ -69,7 +69,8 @@ const Project = () => {
           <div className="text-center md:text-left">
             <PageSentence
               badge="PROJETS"
-              title="Jetez un coup d'oeil à nos projets déjà existants !"
+              title="Jetez un coup d'oeil à nos projets déjà existants ! "
+              
             />
           </div>
         </aside>
@@ -101,7 +102,7 @@ const Project = () => {
             )
           })}
         </div>
-        <Button value="Charger plus" color="white" style="light" />
+        {/* <Button value="Charger plus" color="white" style="light" /> */}
       </section>
     </PageTemplate>
   )
