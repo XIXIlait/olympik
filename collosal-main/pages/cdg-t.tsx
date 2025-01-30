@@ -6,7 +6,7 @@ import React from 'react';
 
 const TermOfService = () => {
   return (
-    <PageTemplate>
+    <PageTemplate title='CDG & ML- OLYMPIK'>
       <section className="space-y-6 text-center" data-aos="zoom-in-up">
         <PageSentence badge="A SAVOIR" title={`Conditions Générales d'Utilisation`} />
         <Text textStyle="BlogMeta" value="Mis à jour le 14 janvier 2025" />

@@ -63,14 +63,14 @@ const NavBar = () => {
                   isOpen ? '' : 'hidden '
                 }space-y-5 mt-4 lg:mt-0 lg:space-y-0 lg:space-x-16 lg:flex lg:place-items-center`}
               >
-                <NavLink href="/service" value="Apps sur mesure" canActive={true} />
+                <NavLink href="/apps-sur-mesure" value="Apps sur mesure" canActive={true} />
                 <NavLink
-                  href="/how-we-work"
+                  href="/apps-adaptable"
                   value="Apps adaptable (entreprise/institut)"
                   canActive={true}
                 />
-                <NavLink href="/project" value="Nos Projets" canActive={true} />
-                <NavLink href="/about" value="À Propos" canActive={true} />
+                <NavLink href="/nos-projets" value="Nos Projets" canActive={true} />
+                <NavLink href="/a-propos" value="À Propos" canActive={true} />
               </div>
               <div
                 className={`${isOpen ? '' : 'hidden '}lg:block mt-5 lg:mt-0`}

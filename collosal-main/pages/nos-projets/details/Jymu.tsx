@@ -70,7 +70,7 @@ const ProjectDetail = () => {
         <ImageCarousel images={images} initialIndex={carouselIndex} onClose={() => setIsCarouselOpen(false)} />
       )}
       <div className="mt-8 text-center mb-16">
-        <ButtonLink value="Nos autres projets" href="/project" />
+        <ButtonLink value="Nos autres projets" href="/nos-projets" />
       </div>
     </PageTemplate>
   )

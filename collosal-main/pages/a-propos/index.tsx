@@ -67,7 +67,7 @@ const About = () => {
         <div className="w-full" data-aos="fade-up">
           <TestimonialList />
         </div>
-        <ButtonLink value="Découvrir nos projets" href="/project" />
+        <ButtonLink value="Découvrir nos projets" href="/projects" />
       </section>
       <LineDivider />
       <section className="grid place-items-center gap-16">

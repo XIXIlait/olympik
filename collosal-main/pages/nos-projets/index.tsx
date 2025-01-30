@@ -20,28 +20,28 @@ const Project = () => {
     {
       title: 'Drop the Block - Craft Edition',
       description: 'Un jeu d\'arcade addictif',
-      detailPage: '/project/detail/DropTheBlock',
+      detailPage: '/nos-projets/details/DropTheBlock',
       imageUrl: '/images/drop.PNG',
       category: 'App sur mesure'
     },
     {
       title: 'Jymu',
       description: 'Le nouveau réseau social du sport',
-      detailPage: '/project/detail/Jymu',
+      detailPage: '/nos-projets/details/Jymu',
       imageUrl: '/images/JPEG.jpg',
       category: 'App sur mesure'
     },
     {
       title: 'SMA (Student mobile App)',
       description: 'L\'outil moderne pour écoles et étudiants',
-      detailPage: '/project/detail/SMA',
+      detailPage: '/nos-projets/details/SMA',
       imageUrl: '/images/sma.jpg',
       category: 'App adaptable'
     },
     {
       title: 'Friends Trip',
       description: 'Une application pour trouver où les gens vont en voyage',
-      detailPage: '/project/detail/FriendsTrip',
+      detailPage: '/nos-projets/details/FriendsTrip',
       imageUrl: '/images/friends.webp',
       category: 'App sur mesure'
     },
@@ -60,7 +60,7 @@ const Project = () => {
   };
 
   return (
-    <PageTemplate title="Project - Collosal">
+    <PageTemplate title="Nos Projets - OLYMPIK">
       <section className="flex flex-col items-center gap-5 md:flex-row md:justify-between">
         <aside
           className="w-full sm:w-10/12 grid grid-cols-1 place-items-center gap-12 md:place-items-start md:w-8/12 lg:w-6/12"

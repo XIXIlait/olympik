@@ -12,7 +12,7 @@ const CallOut = () => {
           <SectionSentence title="Vous avez un projet d'application, une idée ou un besoin particulier..." />
         </div>
         <div className="flex flex-col gap-5 w-full sm:w-fit sm:flex-row lg:w-full lg:justify-end">
-          <ButtonLink value="Contactez nous" href="/quote" />
+          <ButtonLink value="Contactez nous" href="/contact" />
           <ButtonLink value="FAQ" color="white" style="light" href="/faq" />
         </div>
       </section>

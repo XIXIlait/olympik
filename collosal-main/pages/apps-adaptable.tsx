@@ -23,28 +23,28 @@ const HowWeWork = () => {
     {
       title: 'Drop the Block - Craft Edition',
       description: 'Un jeu d\'arcade addictif',
-      detailPage: '/project/detail/DropTheBlock',
+      detailPage: '/nos-projets/details/DropTheBlock',
       imageUrl: '/images/drop.PNG',
       category: 'App sur mesure'
     },
     {
       title: 'Jymu',
       description: 'Le nouveau réseau social du sport',
-      detailPage: '/project/detail/Jymu',
+      detailPage: '/nos-projets/details/Jymu',
       imageUrl: '/images/JPEG.jpg',
       category: 'App sur mesure'
     },
     {
       title: 'SMA (Student mobile App)',
       description: 'L\'outil moderne pour écoles et étudiants',
-      detailPage: '/project/detail/SMA',
+      detailPage: '/nos-projets/details/SMA',
       imageUrl: '/images/sma.jpg',
       category: 'App adaptable'
     },
     {
       title: 'Friends Trip',
       description: 'Une application pour trouver où les gens vont en voyage',
-      detailPage: '/project/detail/FriendsTrip',
+      detailPage: '/nos-projets/details/FriendsTrip',
       imageUrl: '/images/friends.webp',
       category: 'App sur mesure'
     },
@@ -53,7 +53,7 @@ const HowWeWork = () => {
   const [filteredProjects, setFilteredProjects] = useState<Project[]>(projectList.filter(project => project.category === 'App adaptable'));
 
   return (
-    <PageTemplate>
+    <PageTemplate title="Apps Adaptable - OLYMPIK">
       <section className="grid place-items-center">
         <div className="sm:w-10/12 md:w-8/12 lg:w-6/12 2xl:w-8/12 text-center mb-4" data-aos="zoom-in-up">
           <PageSentence
@@ -77,7 +77,7 @@ const HowWeWork = () => {
               </div>
             ))}
             <div className="mt-8 text-center mb-16 flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 justify-center">
-              <ButtonLink value="Intéressé par SMA pour votre établissement" href="/project" />
+              <ButtonLink value="Intéressé par SMA pour votre établissement" href="/nos-projets" />
               <a
                 href="https://app.olympik.net"
                 target="_blank"

@@ -13,7 +13,7 @@ import React from 'react'
 const Home = () => {
   return (
     <>
-      <PageTemplate title="Accueil - Collosal">
+      <PageTemplate title="Accueil - OLYMPIK">
         {/* Section Bannière */}
         <section
           className="flex flex-col gap-10 items-center"
@@ -32,7 +32,7 @@ const Home = () => {
               value="Nous découvrir"
               color="white"
               style="light"
-              href="/about"
+              href="/a-propos"
             />
           </div>
         </section>
@@ -73,7 +73,7 @@ const Home = () => {
             <div className="mt-6">
               <ButtonLink
                 value="Voir cette offre"
-                href="/service"
+                href="/apps-sur-mesure"
                 size="small"
                 color="white"
                 style="light"
@@ -93,7 +93,7 @@ const Home = () => {
               />
               <ButtonLink
                 value="Voir cette offre"
-                href="/how-we-work"
+                href="/apps-adaptable"
                 size="small"
                 color="white"
                 style="light"
