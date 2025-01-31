@@ -16,7 +16,7 @@ const Footer = () => {
                 textStyle="SectionParagraph"
               />
               <Text
-                value={`Design By OLYMPIK NET`}
+                value={`Réalisé par OLYMPIK`}
                 textStyle="SectionParagraph"
               />
             </div>
