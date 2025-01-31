@@ -3,7 +3,7 @@ import React from 'react'
 interface SectionSentenceProps {
   badge?: string
   title?: string
-  description?: string
+  description?: React.ReactNode; 
   badgeStyle?: 'success' | 'error'
 }
 const PageSentence = ({
@@ -31,10 +31,10 @@ const PageSentence = ({
           {title == '' ? '' : <Text value={title} textStyle="PageTitle" />}
         </div>
       )}
-      {description == '' ? (
+      {description == '' || description == null ? (
         ''
       ) : (
-        <Text value={description} textStyle="PageDescription" />
+        <Text value={String(description)} textStyle="PageDescription" />
       )}
     </article>
   )

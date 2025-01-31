@@ -73,15 +73,16 @@ const NavBar = () => {
                 <NavLink href="/a-propos" value="À Propos" canActive={true} />
               </div>
               <div
-                className={`${isOpen ? '' : 'hidden '}lg:block mt-5 lg:mt-0`}
+                className={`${isOpen ? '' : 'hidden '}lg:block mt-5 lg:mt-0 pr-2`}
               >
-                <ButtonLink
-                  value="Contact"
-                  style="light"
-                  color="white"
-                  size="small"
-                  href="/contact"
-                />
+                <select className="bg-transparent text-white border border-white rounded px-2 py-1 text-sm custom-size pr-2">
+                  <option className="bg-transparent text-black flex items-center" value="fr">
+                    FR
+                  </option>
+                  <option className="bg-transparent text-black flex items-center" value="en">
+                    EN
+                  </option>
+                </select>
               </div>
             </div>
           </div>

@@ -36,4 +36,11 @@
   .swiper-slide-active {
     @apply border-2 border-primary mt-0 !important;
   }
+  .custom-size {
+    padding: 4px 8px; /* Adjust padding to reduce size */
+    padding-right: 24px; /* Add padding to the right inside the select element */
+    font-size: 0.75rem; /* Adjust font size if needed */
+    height: 36px; /* Increase height slightly */
+    width: auto; /* Adjust width as needed */
+  }
 }

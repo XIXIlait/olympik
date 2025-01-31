@@ -1,7 +1,7 @@
 import useMobileDeviceDetection from 'hooks/useMobileDetection'
 import React, { forwardRef, MouseEventHandler } from 'react'
 interface ButtonProps {
-  value: string
+  value: React.ReactNode; // Change this line to React.ReactNode
   onClick?: MouseEventHandler<HTMLButtonElement>
   size?: 'normal' | 'small'
   style?: 'light' | 'outline' | 'solid'
